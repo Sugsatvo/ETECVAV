@@ -200,7 +200,7 @@ html{
 }
 
 .card-titulo {
-    font-size: clamp(16px, 2vw, 32px);
+    font-size: clamp(30px, 2vw, 100px);
     color: #f0fff1;
 }
 
@@ -232,13 +232,7 @@ html{
 
 .textos-card{
     text-align: left;
-
 }
-
-.card-distancia{
-    margin-left: 3rem;
-}
-
 .bio-titulo{
     margin-top: 5rem;
 }
@@ -250,14 +244,39 @@ html{
 .secao-fauna-flora{
     min-height: 100vh;
     width: 50%;
-    display: flex;
-    justify-content: center;
+    position: relative;
 }
 
 .titulo-fauna-flora{
     margin-top: 3rem;
+    align-self: flex-start;
 }
 
-.texto-prin-fauna{
-    margin-top: 10rem;
+.texto-fauna{
+    display:inline-block;
+}
+
+#card-fauna{
+    background-image: url(imagens/cardfauna.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#card-mico{
+    height: 30%;
+    width: 40%;
+    background-image: url(imagens/cardmico.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#card-especies{
+    position: absolute;
+    right:0;
+    height: 30%;
+    width: 40%;
+}
+
+.textos-cards-fauna{
+     font-size: clamp(10px, 2vw, 20px);
 }
