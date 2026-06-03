@@ -29,16 +29,17 @@ html{
 
 .navbar {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+    min-width: 1400px;
+    gap: 40px;
     position: fixed;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 2rem;
     z-index: 1000;
     padding: 10px 30px;
     border-radius: 50px;
+    background-color: #d9d9d9;
+    min-height: 3rem;
 
 }
 
@@ -48,9 +49,19 @@ html{
     font-size: clamp(5px, 2vw, 15px);
     font-style: normal;
     text-decoration: none;
-    color: #551a8b;
-    border-right: 2px solid #92e6a7ff;
+    color: #ffff;
     padding-right: 2%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-botao:hover{
+    background-color: #004000;
+    min-height: 2rem;
+
 }
 
 .secao-capa{
@@ -259,6 +270,7 @@ html{
     background-image: url(imagens/cardmico.jpg);
     background-size: cover;
     background-position: center;
+    left:2rem;
 }
 
 #card-especies{
@@ -292,4 +304,28 @@ html{
     background-image: url(imagens/cardfruta.jpg);
     background-size: cover;
     background-position: center;
+}
+
+.texto-introduçao{
+    margin-bottom: 2rem;
+    text-align: justify;
+}
+
+.introduçao-foto{
+    background-image: url(imagens/introduçaofoto.jpg);
+    margin: 7% 0 3rem 6rem;
+}
+
+.textos-fatores-prejudiciais{
+    margin-top: 2rem;
+    text-align: justify;
+}
+
+.foto-vaca{
+    height: 40%;
+    width: 40%;
+    background-image: url(imagens/vacafoto.avif);
+    background-size: cover;
+    background-position: center;
+
 }
